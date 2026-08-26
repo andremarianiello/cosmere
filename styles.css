@@ -11,14 +11,13 @@ body {
   padding: 0rem;
   overflow: hidden;
   align-content: start;
-  container-type: inline-size;
 
   * {
     box-sizing: border-box;
   }
 }
 
-.errors {
+.user-data-errors {
   grid-area: errors;
 }
 
@@ -119,6 +118,10 @@ details.build-choices {
   }
 }
 
+.character-container {
+  container-type: inline-size;
+}
+
 .character {
   grid-area: character;
   display: grid;
@@ -129,6 +132,7 @@ details.build-choices {
   justify-content: start;
   padding-right: 1rem;
   grid-template-columns: [physical-start cognitive-start spiritual-start] 1fr [physical-end cognitive-end spiritual-end];
+
   @container (width > 50em) {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "physical cognitive spiritual";
