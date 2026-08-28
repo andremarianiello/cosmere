@@ -376,7 +376,7 @@ details.build-choices {
       border: 1px solid black;
       margin: 1rem;
 
-      &#talents {
+      &#talents, &#surges {
         ul {
           display: contents;
 
