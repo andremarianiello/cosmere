@@ -96,6 +96,7 @@ details.build-choices {
 
       .build-errors {
         grid-column: 1 / -1;
+        container-type: inline-size;
       }
 
       ul.build-choice-tree {
@@ -116,6 +117,16 @@ details.build-choices {
             display: grid;
             grid-column: 1 / -1;
             grid-template-columns: subgrid;
+          }
+        }
+
+        input[type=range] {
+          appearance: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+
+          &::-webkit-slider-thumb {
+            -webkit-appearance: none;
           }
         }
       }
@@ -221,7 +232,7 @@ details.build-choices {
         font-size: .7rem;
         color: #666666;
         font-weight: bold;
-        
+
         output {
           font-size: 3rem;
           text-align: center;
@@ -230,8 +241,10 @@ details.build-choices {
       }
 
       .defense {
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: 1rem;
+        padding-left: 0.9rem;
+        /* minor adjustments to fit shield icon better */
         height: 5rem;
         aspect-ratio: 1 / 1;
         background-image: url(data:image/png;base64,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);
@@ -360,49 +373,8 @@ details.build-choices {
         align-items: center;
       }
 
-      .skill-ranks {
-        height: 1.5rem;
-        appearance: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        clip-path: shape(from 3% 50%,
-            arc by 14% 0 of 7%,
-            arc by -14% 0 of 7%,
-            close,
-            move by 20% 0,
-            arc by 14% 0 of 7%,
-            arc by -14% 0 of 7%,
-            close,
-            move by 20% 0,
-            arc by 14% 0 of 7%,
-            arc by -14% 0 of 7%,
-            close,
-            move by 20% 0,
-            arc by 14% 0 of 7%,
-            arc by -14% 0 of 7%,
-            close,
-            move by 20% 0,
-            arc by 14% 0 of 7%,
-            arc by -14% 0 of 7%,
-            close);
-        background: none;
-        background-image: radial-gradient(circle closest-side, white 50%, black 50%, black 90%, white 90%);
-        background-size: 20%;
-        background-repeat: repeat-x;
-
-        &::-webkit-meter-bar {
-          background: none;
-        }
-
-        &::-webkit-meter-optimum-value {
-          background: none;
-          background-color: black;
-        }
-
-        &::-moz-meter-bar {
-          background: none;
-          background-color: black;
-        }
+      meter.skill-ranks {
+        --bullet-count: 5;
       }
     }
   }
@@ -412,7 +384,8 @@ details.build-choices {
       border: 1px solid black;
       margin: 1rem;
 
-      &#talents, &#surges {
+      &#talents,
+      &#surges {
         ul {
           display: contents;
 
@@ -471,6 +444,63 @@ details.build-choices {
           text-indent: 1rem;
         }
       }
+
+      &#goals {
+        display: grid;
+        grid-template-columns: 1fr min-content auto 1fr;
+
+        ul {
+          display: contents;
+
+          li {
+            display: contents;
+          }
+
+          .goal {
+            display: grid;
+            grid-template-columns: subgrid;
+            grid-column: 2 / 4;
+            gap: 1rem;
+
+            &:has(meter[value="3"]) {
+              text-decoration: line-through;
+            }
+
+            meter.goal-progress {
+              --bullet-count: 3;
+              width: 3rem;
+            }
+          }
+        }
+      }
     }
+  }
+}
+
+meter.bullet-meter {
+  /* --bullet-count: attr(max type(<number>)); // not supported in firefox, must set on usage site */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: none;
+  background-image: radial-gradient(circle closest-side, white 50%, black 50%, black 90%, white 90%);
+  background-size: calc(100% / var(--bullet-count));
+  background-repeat: repeat-x;
+  mask-image: radial-gradient(circle closest-side, black 75%, transparent 75%, transparent 100%);
+  mask-size: calc(100% / var(--bullet-count));
+  mask-repeat: repeat-x;
+
+  &::-webkit-meter-bar {
+    background: none;
+  }
+
+  &::-webkit-meter-optimum-value {
+    background: none;
+    background-color: black;
+  }
+
+  &::-moz-meter-bar {
+    background: none;
+    background-color: black;
   }
 }
