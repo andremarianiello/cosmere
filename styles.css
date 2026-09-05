@@ -42,6 +42,7 @@ main.character-builder {
   .character-container {
     container-type: inline-size;
     grid-area: character;
+    isolation: isolate;
   }
 
   details.build-choices {
@@ -52,6 +53,12 @@ main.character-builder {
     max-height: 100dvh;
     box-sizing: border-box;
     max-width: min(100dvw, max-content);
+    isolation: isolate;
+
+    &:not([open]) {
+      position: fixed;
+      z-index: 1;
+    }
 
     @media print {
       display: none;
@@ -67,6 +74,9 @@ main.character-builder {
       align-items: center;
       grid-auto-flow: column;
       cursor: pointer;
+      background-color: white;
+      border-radius: 2rem;
+      box-shadow: 0.1rem 0.1rem 0.1rem;
 
       .build-choices-marker {
         width: 3rem;
@@ -85,6 +95,11 @@ main.character-builder {
     &:not([open]) summary {
       writing-mode: sideways-lr;
       max-width: fit-content;
+      gap: 0;
+
+      h2 {
+        display: none;
+      }
 
       .build-choices-marker {
         grid-column: 2;
@@ -178,7 +193,7 @@ main.character-builder {
   }
 
   @container (width < 50em) {
-    @media not(print) {
+    @media screen {
       grid-template-areas: unset;
       grid-template-columns: [physical-start cognitive-start spiritual-start] 1fr [physical-end cognitive-end spiritual-end];
     }
