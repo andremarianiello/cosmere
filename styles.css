@@ -1,9 +1,18 @@
+:root {
+  @media print {
+    font-size: 12px;
+  }
+}
+
 body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   * {
     box-sizing: inherit;
+  }
+  section {
+    break-inside: avoid;
   }
 }
 
@@ -18,15 +27,21 @@ main.character-builder {
   grid-template-areas:
     "build-choices character";
     "build-choices footer";
-  max-height: 100dvh;
   margin: 0;
   padding: 0rem;
-  overflow: hidden;
   align-content: start;
   font-family: sans-serif;
 
+  overflow: hidden;
+  max-height: 100dvh;
+  @media print {
+    overflow: visible;
+    max-height: unset;
+  }
+
   .character-container {
     container-type: inline-size;
+    grid-area: character;
   }
 
   details.build-choices {
@@ -37,6 +52,10 @@ main.character-builder {
     max-height: 100dvh;
     box-sizing: border-box;
     max-width: min(100dvw, max-content);
+
+    @media print {
+      display: none;
+    }
 
     summary {
       padding: 1rem;
@@ -143,7 +162,6 @@ main.character-builder {
 }
 
 .character {
-  grid-area: character;
   display: grid;
   max-height: 100dvh;
   overflow-y: auto;
@@ -151,11 +169,19 @@ main.character-builder {
   align-content: start;
   justify-content: start;
   padding-right: 1rem;
-  grid-template-columns: [physical-start cognitive-start spiritual-start] 1fr [physical-end cognitive-end spiritual-end];
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "physical cognitive spiritual";
 
-  @container (width > 50em) {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "physical cognitive spiritual";
+  @media print {
+    overflow: visible;
+    max-height: unset;
+  }
+
+  @container (width < 50em) {
+    @media not(print) {
+      grid-template-areas: unset;
+      grid-template-columns: [physical-start cognitive-start spiritual-start] 1fr [physical-end cognitive-end spiritual-end];
+    }
   }
 
   h1,
@@ -172,6 +198,7 @@ main.character-builder {
     grid-column: 1 / -1;
     border: 1px solid black;
     padding: 0.5rem;
+    break-inside: avoid;
 
     &.aspectual {
       display: grid;
@@ -385,6 +412,8 @@ main.character-builder {
   }
 
   .info {
+    break-inside: auto;
+
     .info-card {
       border: 1px solid black;
       margin: 1rem;
@@ -398,6 +427,7 @@ main.character-builder {
             display: contents;
 
             article {
+              break-inside: avoid;
               border: 1px solid black;
               margin: 1rem;
               padding: 1rem;
@@ -482,6 +512,9 @@ main.character-builder {
   }
 
   footer {
+    @media print {
+      display: none;
+    }
   }
 }
 
