@@ -76,7 +76,6 @@ main.character-builder {
       cursor: pointer;
       background-color: white;
       border-radius: 2rem;
-      box-shadow: 0.1rem 0.1rem 0.1rem;
 
       .build-choices-marker {
         width: 3rem;
@@ -96,6 +95,7 @@ main.character-builder {
       writing-mode: sideways-lr;
       max-width: fit-content;
       gap: 0;
+      box-shadow: 0.1rem 0.1rem 0.1rem;
 
       h2 {
         display: none;
@@ -107,10 +107,15 @@ main.character-builder {
       }
     }
 
-    &[open]&::details-content {
-      overflow-y: auto;
-      flex: 1;
-      padding: 1rem;
+    &[open] {
+      summary {
+        box-shadow: inset 0.1rem 0.1rem 0.1rem;
+      }
+      &::details-content {
+        overflow-y: auto;
+        flex: 1;
+        padding: 1rem;
+      }
     }
 
     aside {
