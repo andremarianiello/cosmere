@@ -246,6 +246,7 @@ main.character-builder {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    gap: 0.5rem;
 
     label {
       border: 0.1rem solid black;
