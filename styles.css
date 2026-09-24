@@ -8,9 +8,11 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
   * {
     box-sizing: inherit;
   }
+
   section {
     break-inside: avoid;
   }
@@ -26,7 +28,7 @@ main.character-builder {
   grid-template-columns: max-content auto;
   grid-template-areas:
     "build-choices character";
-    "build-choices footer";
+  "build-choices footer";
   margin: 0;
   padding: 0rem;
   align-content: start;
@@ -34,6 +36,7 @@ main.character-builder {
 
   overflow: hidden;
   max-height: 100dvh;
+
   @media print {
     overflow: visible;
     max-height: unset;
@@ -111,6 +114,7 @@ main.character-builder {
       summary {
         box-shadow: inset 0.1rem 0.1rem 0.1rem;
       }
+
       &::details-content {
         overflow-y: auto;
         flex: 1;
@@ -409,7 +413,7 @@ main.character-builder {
 
     .skill {
       display: grid;
-      grid-template-columns: minmax(2rem, 1fr) minmax(8em, 6fr) auto;
+      grid-template-columns: minmax(2rem, 1fr) minmax(8em, 6fr) max-content;
       grid-column-gap: 0.4rem;
       align-items: center;
       height: stretch;
@@ -427,7 +431,9 @@ main.character-builder {
       }
 
       meter.skill-ranks {
-        --bullet-count: 5;
+        aspect-ratio: var(--bullet-count) / 1;
+        height: 1rem;
+        align-self: left;
       }
     }
   }
