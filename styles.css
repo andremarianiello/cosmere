@@ -540,14 +540,14 @@ main.character-builder {
 }
 
 meter.bullet-meter {
-  /* --bullet-count: attr(max type(<number>)); // not supported in firefox, must set on usage site */
+  --bullet-count: attr(max type(<number>));
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   background: none;
-  background-image: radial-gradient(circle closest-side, white 50%, black 50%, black 90%, white 90%);
+  background-image: radial-gradient(circle closest-side, white 50%, black 50%, black 90%, white 90%), linear-gradient(blue);
   background-size: calc(100% / var(--bullet-count));
-  background-repeat: repeat-x;
+  background-repeat: repeat-x, none;
   mask-image: radial-gradient(circle closest-side, black 75%, transparent 75%, transparent 100%);
   mask-size: calc(100% / var(--bullet-count));
   mask-repeat: repeat-x;
