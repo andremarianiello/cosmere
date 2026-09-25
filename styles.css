@@ -430,10 +430,13 @@ main.character-builder {
         align-items: center;
       }
 
-      meter.skill-ranks {
-        aspect-ratio: var(--bullet-count) / 1;
-        height: 1rem;
-        align-self: left;
+      meter.skill-ranks.bullet-meter {
+        aspect-ratio: var(--total-bullet-count) / 1;
+        --temp-ranks: attr(data-temp-ranks type(<number>));
+        --total-ranks: attr(value type(<number>));
+        --perm-ranks: calc(var(--total-ranks) - var(--temp-ranks));
+        --color-switch: calc(100% * var(--perm-ranks) / var(--total-ranks));
+        --filled-bullet-image: linear-gradient(to right, black 0 var(--color-switch), #bbb var(--color-switch) 100%);
       }
     }
   }
@@ -529,7 +532,6 @@ main.character-builder {
             }
 
             meter.goal-progress {
-              --bullet-count: 3;
               width: 3rem;
             }
           }
@@ -546,17 +548,18 @@ main.character-builder {
 }
 
 meter.bullet-meter {
-  --bullet-count: attr(max type(<number>));
+  --total-bullet-count: attr(max type(<number>));
+  --filled-bullet-count: attr(value type(<number>));
+  --empty-bullet-image: radial-gradient(circle closest-side, white 60%, black 60%, black 80%, white 80%);
+  --filled-bullet-mask: radial-gradient(circle closest-side, black 65%, transparent 65%);
+  --filled-bullet-image: linear-gradient(black);
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   background: none;
-  background-image: radial-gradient(circle closest-side, white 50%, black 50%, black 90%, white 90%), linear-gradient(blue);
-  background-size: calc(100% / var(--bullet-count));
-  background-repeat: repeat-x, none;
-  mask-image: radial-gradient(circle closest-side, black 75%, transparent 75%, transparent 100%);
-  mask-size: calc(100% / var(--bullet-count));
-  mask-repeat: repeat-x;
+  background-image: var(--empty-bullet-image);
+  background-size: calc(100% / var(--total-bullet-count));
+  background-repeat: repeat-x;
 
   &::-webkit-meter-bar {
     background: none;
@@ -564,11 +567,17 @@ meter.bullet-meter {
 
   &::-webkit-meter-optimum-value {
     background: none;
-    background-color: black;
+    background-image: var(--filled-bullet-image);
+    mask-image: var(--filled-bullet-mask);
+    mask-size: calc(100% / var(--filled-bullet-count));
+    mask-repeat: repeat-x;
   }
 
   &::-moz-meter-bar {
     background: none;
-    background-color: black;
+    background-image: var(--filled-bullet-image);
+    mask-image: var(--filled-bullet-mask);
+    mask-size: calc(100% / var(--filled-bullet-count));
+    mask-repeat: repeat-x;
   }
 }
