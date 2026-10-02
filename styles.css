@@ -28,7 +28,7 @@ main.character-builder {
   grid-template-columns: max-content auto;
   grid-template-areas:
     "build-choices character";
-  "build-choices footer";
+    "build-choices footer";
   margin: 0;
   padding: 0rem;
   align-content: start;
@@ -55,7 +55,7 @@ main.character-builder {
     margin: 0;
     max-height: 100dvh;
     box-sizing: border-box;
-    max-width: min(100dvw, max-content);
+    max-width: 100dvw;
     isolation: isolate;
 
     &:not([open]) {
