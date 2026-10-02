@@ -124,7 +124,7 @@ main.character-builder {
 
     aside {
       display: grid;
-      grid-template-columns: max-content min-content;
+      grid-template-columns: 1fr 1fr;
       grid-column: 1 / -1;
       grid-gap: 1rem;
 
