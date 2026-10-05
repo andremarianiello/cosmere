@@ -27,7 +27,7 @@ main.character-builder {
   grid-column-gap: 1rem;
   grid-template-columns: max-content auto;
   grid-template-areas:
-    "build-choices character";
+    "build-choices character"
     "build-choices footer";
   margin: 0;
   padding: 0rem;
@@ -268,8 +268,10 @@ main.character-builder {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       place-items: center;
+      /*
       width: stretch;
       width: -moz-available;
+      */
 
       >* {
         display: flex;
@@ -510,9 +512,57 @@ main.character-builder {
         }
       }
 
+      &#expertises {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        ul {
+          display: contents;
+
+          li {
+            display: contents;
+          }
+
+          .expertise {
+            display: grid;
+            grid-template-columns: subgrid;
+            grid-column: 2 / -2;
+            align-items: center;
+
+            .expertise-type {
+              span& {
+                justify-self: right;
+              }
+              select& {
+                background: none;
+                text-align: end;
+                border: 1px dashed black;
+              }
+            }
+          }
+        }
+
+        &>ul {
+          display: grid;
+          grid-template-columns: 1fr max-content auto auto 1fr;
+          align-items: center;
+          grid-gap: 0.25rem;
+          grid-auto-rows: auto;
+          padding-inline-start: 0;
+        }
+
+        button.add-expertise {
+          display: block;
+          width: max-content;
+          margin: 1rem;
+        }
+      }
+
       &#goals {
-        display: grid;
-        grid-template-columns: 1fr min-content auto 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         ul {
           display: contents;
@@ -524,17 +574,55 @@ main.character-builder {
           .goal {
             display: grid;
             grid-template-columns: subgrid;
-            grid-column: 2 / 4;
+            grid-column: 2 / -2;
             gap: 1rem;
+            align-items: center;
 
             &:has(meter[value="3"]) {
-              text-decoration: line-through;
+              .goal-name {
+                text-decoration: line-through;
+                text-decoration-thickness: 20%;
+              }
             }
 
-            meter.goal-progress {
-              width: 3rem;
+            button {
+              background-color: transparent;
+              border: 1px solid black;
+              border-radius: 0.25rem;
+              box-shadow: 0.05rem 0.05rem 0.05rem;
+              position: relative;
+              top: -0.05rem;
+              left: -0.05rem;
+              &:hover {
+                top: -0.1rem;
+                left: -0.1rem;
+                box-shadow: 0.1rem 0.1rem 0.1rem;
+              }
+              &:active {
+                top: 0rem;
+                left: 0rem;
+                box-shadow: 0rem 0rem 0rem;
+              }
+              meter.goal-progress {
+                width: 3rem;
+              }
             }
           }
+        }
+
+        &>ul {
+          display: grid;
+          grid-template-columns: 1fr min-content auto min-content min-content 1fr;
+          align-items: center;
+          grid-gap: 0.25rem;
+          grid-auto-rows: auto;
+          padding-inline-start: 0;
+        }
+
+        button.add-goal {
+          display: block;
+          width: max-content;
+          margin: 1rem;
         }
       }
     }
@@ -550,7 +638,7 @@ main.character-builder {
 meter.bullet-meter {
   --total-bullet-count: attr(max type(<number>));
   --filled-bullet-count: attr(value type(<number>));
-  --empty-bullet-image: radial-gradient(circle closest-side, white 60%, black 60%, black 80%, white 80%);
+  --empty-bullet-image: radial-gradient(circle closest-side, transparent 60%, black 60%, black 80%, transparent 80%);
   --filled-bullet-mask: radial-gradient(circle closest-side, black 65%, transparent 65%);
   --filled-bullet-image: linear-gradient(black);
   appearance: none;
@@ -580,4 +668,8 @@ meter.bullet-meter {
     mask-size: calc(100% / var(--filled-bullet-count));
     mask-repeat: repeat-x;
   }
+}
+
+[contenteditable] {
+  border: 1px dashed black;
 }
