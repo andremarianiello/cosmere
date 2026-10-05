@@ -510,9 +510,44 @@ main.character-builder {
         }
       }
 
+      &#expertises {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        ul {
+          display: contents;
+
+          li {
+            display: contents;
+          }
+
+          .expertise {
+            display: grid;
+            grid-template-columns: subgrid;
+            grid-column: 2 / -2;
+            align-items: center;
+
+            .expertise-type {
+              justify-self: right;
+            }
+          }
+        }
+
+        & > ul {
+          display: grid;
+          grid-template-columns: 1fr max-content auto auto 1fr;
+          align-items: center;
+          grid-gap: 0.25rem;
+          grid-auto-rows: 1fr;
+          padding-inline-start: 0;
+        }
+      }
+
       &#goals {
-        display: grid;
-        grid-template-columns: 1fr min-content auto 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         ul {
           display: contents;
@@ -524,17 +559,38 @@ main.character-builder {
           .goal {
             display: grid;
             grid-template-columns: subgrid;
-            grid-column: 2 / 4;
+            grid-column: 2 / -2;
             gap: 1rem;
+            align-items: center;
 
             &:has(meter[value="3"]) {
-              text-decoration: line-through;
+
+              .goal-name {
+                text-decoration: line-through;
+                text-decoration-thickness: 20%;
+              }
             }
 
             meter.goal-progress {
               width: 3rem;
             }
           }
+        }
+
+        & > ul {
+          display: grid;
+          grid-template-columns: 1fr min-content auto min-content min-content 1fr;
+          align-items: center;
+          grid-gap: 0.25rem;
+          grid-auto-rows: 1fr;
+          padding-inline-start: 0;
+        }
+
+        button.add-goal {
+          display: block;
+          width: max-content;
+          justify-self: center;
+          margin: 1rem;
         }
       }
     }
