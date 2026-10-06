@@ -268,8 +268,10 @@ main.character-builder {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       place-items: center;
+      /*
       width: stretch;
       width: -moz-available;
+      */
 
       >* {
         display: flex;
@@ -529,7 +531,14 @@ main.character-builder {
             align-items: center;
 
             .expertise-type {
-              justify-self: right;
+              span& {
+                justify-self: right;
+              }
+              select& {
+                background: none;
+                text-align: end;
+                border: 1px dashed black;
+              }
             }
           }
         }
@@ -539,7 +548,7 @@ main.character-builder {
           grid-template-columns: 1fr max-content auto auto 1fr;
           align-items: center;
           grid-gap: 0.25rem;
-          grid-auto-rows: 1fr;
+          grid-auto-rows: auto;
           padding-inline-start: 0;
         }
 
@@ -576,8 +585,27 @@ main.character-builder {
               }
             }
 
-            meter.goal-progress {
-              width: 3rem;
+            button {
+              background-color: transparent;
+              border: 1px solid black;
+              border-radius: 0.25rem;
+              box-shadow: 0.05rem 0.05rem 0.05rem;
+              position: relative;
+              top: -0.05rem;
+              left: -0.05rem;
+              &:hover {
+                top: -0.1rem;
+                left: -0.1rem;
+                box-shadow: 0.1rem 0.1rem 0.1rem;
+              }
+              &:active {
+                top: 0rem;
+                left: 0rem;
+                box-shadow: 0rem 0rem 0rem;
+              }
+              meter.goal-progress {
+                width: 3rem;
+              }
             }
           }
         }
@@ -587,7 +615,7 @@ main.character-builder {
           grid-template-columns: 1fr min-content auto min-content min-content 1fr;
           align-items: center;
           grid-gap: 0.25rem;
-          grid-auto-rows: 1fr;
+          grid-auto-rows: auto;
           padding-inline-start: 0;
         }
 
@@ -610,7 +638,7 @@ main.character-builder {
 meter.bullet-meter {
   --total-bullet-count: attr(max type(<number>));
   --filled-bullet-count: attr(value type(<number>));
-  --empty-bullet-image: radial-gradient(circle closest-side, white 60%, black 60%, black 80%, white 80%);
+  --empty-bullet-image: radial-gradient(circle closest-side, transparent 60%, black 60%, black 80%, transparent 80%);
   --filled-bullet-mask: radial-gradient(circle closest-side, black 65%, transparent 65%);
   --filled-bullet-image: linear-gradient(black);
   appearance: none;
@@ -640,4 +668,8 @@ meter.bullet-meter {
     mask-size: calc(100% / var(--filled-bullet-count));
     mask-repeat: repeat-x;
   }
+}
+
+[contenteditable] {
+  border: 1px dashed black;
 }
