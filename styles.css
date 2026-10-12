@@ -537,7 +537,6 @@ main.character-builder {
               select& {
                 background: none;
                 text-align: end;
-                border: 1px dashed black;
               }
             }
           }
@@ -550,12 +549,6 @@ main.character-builder {
           grid-gap: 0.25rem;
           grid-auto-rows: auto;
           padding-inline-start: 0;
-        }
-
-        button.add-expertise {
-          display: block;
-          width: max-content;
-          margin: 1rem;
         }
       }
 
@@ -584,29 +577,6 @@ main.character-builder {
                 text-decoration-thickness: 20%;
               }
             }
-
-            button {
-              background-color: transparent;
-              border: 1px solid black;
-              border-radius: 0.25rem;
-              box-shadow: 0.05rem 0.05rem 0.05rem;
-              position: relative;
-              top: -0.05rem;
-              left: -0.05rem;
-              &:hover {
-                top: -0.1rem;
-                left: -0.1rem;
-                box-shadow: 0.1rem 0.1rem 0.1rem;
-              }
-              &:active {
-                top: 0rem;
-                left: 0rem;
-                box-shadow: 0rem 0rem 0rem;
-              }
-              meter.goal-progress {
-                width: 3rem;
-              }
-            }
           }
         }
 
@@ -618,11 +588,14 @@ main.character-builder {
           grid-auto-rows: auto;
           padding-inline-start: 0;
         }
+      }
 
-        button.add-goal {
-          display: block;
-          width: max-content;
-          margin: 1rem;
+      button.add-extra {
+        /* display: block; */
+        max-width: max-content;
+        margin: 1rem;
+        @media print {
+          display: none;
         }
       }
     }
@@ -632,6 +605,29 @@ main.character-builder {
     @media print {
       display: none;
     }
+  }
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  box-shadow: 0.05rem 0.05rem 0.05rem;
+  position: relative;
+  top: -0.05rem;
+  left: -0.05rem;
+  &:hover {
+    top: -0.1rem;
+    left: -0.1rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem;
+  }
+  &:active {
+    top: 0rem;
+    left: 0rem;
+    box-shadow: 0rem 0rem 0rem;
+  }
+  @media print {
+    display: contents;
   }
 }
 
@@ -670,6 +666,13 @@ meter.bullet-meter {
   }
 }
 
-[contenteditable] {
+meter.goal-progress {
+  width: 3rem;
+}
+
+.editable {
   border: 1px dashed black;
+  @media print {
+    border: none;
+  }
 }
