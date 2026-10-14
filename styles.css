@@ -149,6 +149,14 @@ main.character-builder {
           container-type: inline-size;
         }
 
+        input:invalid {
+          border: 1px solid red;
+        }
+
+        input:valid {
+          border: 1px solid green;
+        }
+
         ul.build-choice-tree {
           display: grid;
           grid-template-columns: subgrid;
