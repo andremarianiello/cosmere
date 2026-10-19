@@ -534,6 +534,7 @@ main.character-builder {
               span& {
                 justify-self: right;
               }
+
               select& {
                 background: none;
                 text-align: end;
@@ -594,6 +595,7 @@ main.character-builder {
         /* display: block; */
         max-width: max-content;
         margin: 1rem;
+
         @media print {
           display: none;
         }
@@ -616,16 +618,19 @@ button {
   position: relative;
   top: -0.05rem;
   left: -0.05rem;
+
   &:hover {
     top: -0.1rem;
     left: -0.1rem;
     box-shadow: 0.1rem 0.1rem 0.1rem;
   }
+
   &:active {
     top: 0rem;
     left: 0rem;
     box-shadow: 0rem 0rem 0rem;
   }
+
   @media print {
     display: contents;
   }
@@ -672,7 +677,14 @@ meter.goal-progress {
 
 .editable {
   border: 1px dashed black;
+
   @media print {
     border: none;
   }
+}
+
+.activation-symbol {
+  letter-spacing: -0.5rem;
+  /* cancel out the last letter spacing */
+  margin-right: 0.5rem;
 }
