@@ -509,6 +509,23 @@ main.character-builder {
         p.effect {
           margin: 0.3rem auto;
           text-indent: 1rem;
+
+          .plot-symbol {
+            position: relative;
+
+            img,
+            img& {
+              display: inline;
+              height: 1em;
+              vertical-align: text-top;
+            }
+
+            .complication-number {
+              font-weight: bold;
+              --complication-red: rgb(67.843628%, 7.450867%, 7.450867%);
+              color: var(--complication-red);
+            }
+          }
         }
       }
 
