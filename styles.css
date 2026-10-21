@@ -215,6 +215,20 @@ main.character-builder {
     display: flex;
     flex-direction: row;
     list-style: none;
+    padding: 0;
+
+    button {
+      display: flex;
+      flex-direction: row;
+      height: 2em;
+      width: fit-content;
+      padding: 0.25rem;
+
+      img {
+        height: 100%;
+        display: inline-block;
+      }
+    }
   }
 
   h1,
@@ -227,7 +241,7 @@ main.character-builder {
     text-align: center;
   }
 
-  >* {
+  >section {
     grid-column: 1 / -1;
     border: 1px solid black;
     padding: 0.5rem;
