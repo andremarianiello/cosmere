@@ -98,37 +98,37 @@ newJSVal: (v) => __ghc_wasm_jsffi_jsval_manager.newJSVal(v),
 getJSVal: (k) => __ghc_wasm_jsffi_jsval_manager.getJSVal(k),
 freeJSVal: (k) => __ghc_wasm_jsffi_jsval_manager.freeJSVal(k),
 scheduleWork: () => setImmediate(__exports.rts_schedulerLoop),
-ZC0ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziJSONZC: ($1) => {return globalThis.miso.typeOf($1);},
-ZC2ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziJSONZC: ($1) => {return JSON.stringify($1);},
-ZC2ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC: ($1) => {return $1.length},
-ZC5ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC: ($1) => {return requestAnimationFrame($1);},
-ZC6ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC: ($1,$2) => {return $2[$1]},
-ZC7ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC: ($1) => {return $1},
-ZC8ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC: ($1) => {return $1},
-ZC9ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC: ($1) => {return $1},
-ZC11ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC: ($1,$2) => {return $2[$1]},
-ZC12ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC: () => {return {}},
-ZC14ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC: ($1,$2,$3) => ($3[$1]=$2),
-ZC16ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC: ($1,$2,$3) => {return $1.apply($2, $3);},
-ZC17ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC: ($1) => {return Object.keys($1);},
-ZC23ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC: ($1) => ((...args) => __exports.ghczuwasmzujsffiZC22ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC($1, ...args)),
-ZC31ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC: ($1) => ((...args) => __exports.ghczuwasmzujsffiZC30ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC($1, ...args)),
-ZC33ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC: ($1) => ((...args) => __exports.ghczuwasmzujsffiZC32ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC($1, ...args)),
-ZC37ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC: ($1) => ((...args) => __exports.ghczuwasmzujsffiZC36ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC($1, ...args)),
-ZC39ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC: ($1) => ((...args) => __exports.ghczuwasmzujsffiZC38ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC($1, ...args)),
-ZC43ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC: () => {return globalThis},
-ZC44ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC: () => {return null;},
-ZC45ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC: ($1) => {return $1 === null;},
-ZC46ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC: ($1) => {return $1 === undefined;},
-ZC47ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC: ($1) => {return $1},
-ZC52ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC: ($1,$2) => ($1.push($2)),
-ZC53ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC: () => {return [];},
-ZC54ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC: ($1) => {return $1},
-ZC55ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC: ($1) => {return $1},
-ZC56ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziDSLziFFIZC: ($1) => {if ($1 === 0.0) return false;
+ZC0ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziJSONZC: ($1) => {return globalThis.miso.typeOf($1);},
+ZC2ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziJSONZC: ($1) => {return JSON.stringify($1);},
+ZC2ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC: ($1) => {return $1.length},
+ZC6ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC: ($1) => {return requestAnimationFrame($1);},
+ZC7ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC: ($1,$2) => {return $2[$1]},
+ZC8ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC: ($1) => {return $1},
+ZC9ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC: ($1) => {return $1},
+ZC10ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC: ($1) => {return $1},
+ZC12ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC: ($1,$2) => {return $2[$1]},
+ZC13ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC: () => {return {}},
+ZC15ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC: ($1,$2,$3) => ($3[$1]=$2),
+ZC17ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC: ($1,$2,$3) => {return $1.apply($2, $3);},
+ZC18ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC: ($1) => {return Object.keys($1);},
+ZC24ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC: ($1) => ((...args) => __exports.ghczuwasmzujsffiZC23ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC($1, ...args)),
+ZC32ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC: ($1) => ((...args) => __exports.ghczuwasmzujsffiZC31ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC($1, ...args)),
+ZC34ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC: ($1) => ((...args) => __exports.ghczuwasmzujsffiZC33ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC($1, ...args)),
+ZC38ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC: ($1) => ((...args) => __exports.ghczuwasmzujsffiZC37ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC($1, ...args)),
+ZC40ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC: ($1) => ((...args) => __exports.ghczuwasmzujsffiZC39ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC($1, ...args)),
+ZC44ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC: () => {return globalThis},
+ZC45ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC: () => {return null;},
+ZC46ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC: ($1) => {return $1 === null;},
+ZC47ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC: ($1) => {return $1 === undefined;},
+ZC48ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC: ($1) => {return $1},
+ZC53ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC: ($1,$2) => ($1.push($2)),
+ZC54ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC: () => {return [];},
+ZC55ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC: ($1) => {return $1},
+ZC56ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC: ($1) => {return $1},
+ZC57ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziDSLziFFIZC: ($1) => {if ($1 === 0.0) return false;
 return true;},
-ZC0ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziRuntimeZC: () => {// ts/miso/util.ts
-var version = "1.9.0.0";
+ZC0ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziRuntimeZC: () => {// ts/miso/util.ts
+var version = "1.14.0.0";
 function onBTS() {
   return typeof __BACKGROUND__ !== "undefined" && __BACKGROUND__;
 }
@@ -180,8 +180,8 @@ function fetchCore(url, method, body, requestHeaders, successful, errorful, resp
       for (const [key, value] of response.headers) {
         headers[key] = value;
       }
-      if (!response.ok) {
-        throw new Error(response.statusText);
+      if (response.status < 200 || response.status >= 300) {
+        throw new Error(response.statusText || "HTTP " + response.status);
       }
       if (responseType == "json") {
         return response.json();
@@ -196,7 +196,7 @@ function fetchCore(url, method, body, requestHeaders, successful, errorful, resp
       } else if (responseType === "formData") {
         return response.formData();
       } else if (responseType === "none") {
-        return successful({ error: null, body: null, headers, status });
+        return null;
       }
     }).then((body2) => successful({ error: null, body: body2, headers, status })).catch((body2) => errorful({ error: null, body: body2, headers, status }));
   } catch (err) {
@@ -578,7 +578,7 @@ function callDestroyedRecursive(c) {
 }
 function callDestroyed(c) {
   if (c.type === 1 /* VNode */ && c.onDestroyed)
-    c.onDestroyed();
+    c.onDestroyed(c.domRef);
   if (c.type === 0 /* VComp */)
     unmountComponent(c);
 }
@@ -588,7 +588,7 @@ function callBeforeDestroyed(c) {
       break;
     case 1 /* VNode */:
       if (c.onBeforeDestroyed)
-        c.onBeforeDestroyed();
+        c.onBeforeDestroyed(c.domRef);
       break;
     default:
       break;
@@ -620,8 +620,31 @@ function diffAttrs(c, n, context) {
   diffProps(c ? c.props : {}, n.props, n.domRef, n.ns === "svg", context);
   diffClass(c ? c.classList : null, n.classList, n.domRef, context);
   diffCss(c ? c.css : {}, n.css, n.domRef, context);
+  diffEvents(c, n, context);
   diffChildren(c ? c.children : [], n.children, n.domRef, context);
   drawCanvas(n);
+}
+function diffEvents(c, n, context) {
+  if (!onBTS() && !onMTS())
+    return;
+  if (c === null && n.directEvents) {
+    for (const name of n.directEvents) {
+      context.addEvent(n.domRef, name, { capture: false, direct: true });
+    }
+  }
+  for (const capture of [true, false]) {
+    const cKeys = eventEntries(c, capture);
+    const nKeys = eventEntries(n, capture);
+    for (const name in cKeys) {
+      if (!(name in nKeys))
+        context.removeEvent(n.domRef, name, capture);
+    }
+    for (const name in nKeys) {
+      const nk = nKeys[name], ck = cKeys[name];
+      if (!ck || !sameEventKey(nk, ck))
+        context.addEvent(n.domRef, name, nk);
+    }
+  }
 }
 function diffClass(c, n, domRef, context) {
   if (!c && !n) {
@@ -653,10 +676,11 @@ function diffClass(c, n, domRef, context) {
 }
 function diffProps(cProps, nProps, node, isSvg, context) {
   var newProp;
+  const native = onBTS() || onMTS();
   for (const c in cProps) {
     newProp = nProps[c];
     if (newProp === undefined) {
-      if (isSvg || !(c in node) || c === "disabled") {
+      if (isSvg || native || !(c in node) || c === "disabled") {
         context.removeAttribute(node, c);
       } else {
         context.setAttribute(node, c, "");
@@ -670,7 +694,7 @@ function diffProps(cProps, nProps, node, isSvg, context) {
         } else {
           context.setAttribute(node, c, newProp);
         }
-      } else if (c in node && !(c === "list" || c === "form")) {
+      } else if (!native && c in node && !(c === "list" || c === "form")) {
         node[c] = newProp;
       } else {
         context.setAttribute(node, c, newProp);
@@ -687,7 +711,7 @@ function diffProps(cProps, nProps, node, isSvg, context) {
       } else {
         context.setAttribute(node, n, newProp);
       }
-    } else if (n in node && !(n === "list" || n === "form")) {
+    } else if (!native && n in node && !(n === "list" || n === "form")) {
       node[n] = nProps[n];
     } else {
       context.setAttribute(node, n, newProp);
@@ -729,6 +753,22 @@ function diffChildren(cs, ns, parent, context, endAnchor = null) {
       }
     }
   }
+}
+function eventEntries(c, capture) {
+  const out = {};
+  if (!c)
+    return out;
+  const phase = capture ? c.events.captures : c.events.bubbles;
+  for (const name in phase) {
+    const { staticKey, componentId, options } = phase[name];
+    if (staticKey !== undefined && componentId !== undefined) {
+      out[name] = { capture, staticKey, componentId, options };
+    }
+  }
+  return out;
+}
+function sameEventKey(a, b) {
+  return a.staticKey === b.staticKey && a.componentId === b.componentId && a.options?.preventDefault === b.options?.preventDefault && a.options?.stopPropagation === b.options?.stopPropagation;
 }
 function populateDomRef(c, context) {
   if (c.ns === "svg") {
@@ -954,6 +994,12 @@ function delegator(mount, events, getVTree, debug, context) {
 }
 function listener(e, mount, getVTree, debug, context) {
   getVTree(function(vtree) {
+    if (!vtree) {
+      if (debug) {
+        console.warn("Event received before vtree was mounted, dropping", e);
+      }
+      return;
+    }
     if (Array.isArray(e)) {
       for (const key of e) {
         dispatch(key, vtree, mount, debug, context);
@@ -1114,7 +1160,9 @@ function eventJSON(at, obj) {
     return ret;
   }
   for (const a of at)
-    obj = obj[a];
+    obj = obj == null ? undefined : obj[a];
+  if (obj === null || obj === undefined)
+    return null;
   var newObj;
   if (obj instanceof Array || "length" in obj && obj["localName"] !== "select") {
     newObj = [];
@@ -1207,17 +1255,6 @@ var hydrationContext = {
     return node.childNodes;
   }
 };
-var componentContext = {
-  mountComponent: function(componentId, model) {
-    return;
-  },
-  unmountComponent: function(componentId) {
-    return;
-  },
-  modelHydration: function(componentId, model) {
-    return;
-  }
-};
 var drawingContext = {
   nextSibling: (node) => {
     let sibling = node.nextSibling;
@@ -1263,6 +1300,8 @@ var drawingContext = {
     if (className)
       domRef.classList.remove(className);
   },
+  addEvent: (_node, _name, _key) => {},
+  removeEvent: (_node, _name, _capture) => {},
   insertBefore: (parent, child, node) => {
     return parent.insertBefore(child, node);
   },
@@ -1429,7 +1468,6 @@ globalThis["miso"] = {
   hydrationContext,
   eventContext,
   drawingContext,
-  componentContext,
   diff,
   hydrate,
   version,
@@ -1463,24 +1501,19 @@ globalThis["miso"] = {
   setDrawingContext: function(name) {
     const drawing = globalThis[name]["drawingContext"];
     const events = globalThis[name]["eventContext"];
-    const components = globalThis[name]["componentContext"];
     if (!drawing) {
       console.error('Custom rendering engine ("drawingContext") is not defined at globalThis[name].drawingContext', name);
     }
     if (!events) {
       console.error('Custom event delegation ("eventContext") is not defined at globalThis[name].eventContext', name);
     }
-    if (!components) {
-      console.error('Custom component context ("componentContext") is not defined at globalThis[name].componentContext', name);
-    }
     globalThis["miso"]["drawingContext"] = drawing;
     globalThis["miso"]["eventContext"] = events;
-    globalThis["miso"]["componentContext"] = components;
   }
 };
 },
-ZC1ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCMisoziRuntimeZC: () => {// ts/miso/util.ts
-var version = "1.9.0.0";
+ZC1ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCMisoziRuntimeZC: () => {// ts/miso/util.ts
+var version = "1.14.0.0";
 function onBTS() {
   return typeof __BACKGROUND__ !== "undefined" && __BACKGROUND__;
 }
@@ -1532,8 +1565,8 @@ function fetchCore(url, method, body, requestHeaders, successful, errorful, resp
       for (const [key, value] of response.headers) {
         headers[key] = value;
       }
-      if (!response.ok) {
-        throw new Error(response.statusText);
+      if (response.status < 200 || response.status >= 300) {
+        throw new Error(response.statusText || "HTTP " + response.status);
       }
       if (responseType == "json") {
         return response.json();
@@ -1548,7 +1581,7 @@ function fetchCore(url, method, body, requestHeaders, successful, errorful, resp
       } else if (responseType === "formData") {
         return response.formData();
       } else if (responseType === "none") {
-        return successful({ error: null, body: null, headers, status });
+        return null;
       }
     }).then((body2) => successful({ error: null, body: body2, headers, status })).catch((body2) => errorful({ error: null, body: body2, headers, status }));
   } catch (err) {
@@ -1930,7 +1963,7 @@ function callDestroyedRecursive(c) {
 }
 function callDestroyed(c) {
   if (c.type === 1 /* VNode */ && c.onDestroyed)
-    c.onDestroyed();
+    c.onDestroyed(c.domRef);
   if (c.type === 0 /* VComp */)
     unmountComponent(c);
 }
@@ -1940,7 +1973,7 @@ function callBeforeDestroyed(c) {
       break;
     case 1 /* VNode */:
       if (c.onBeforeDestroyed)
-        c.onBeforeDestroyed();
+        c.onBeforeDestroyed(c.domRef);
       break;
     default:
       break;
@@ -1972,8 +2005,31 @@ function diffAttrs(c, n, context) {
   diffProps(c ? c.props : {}, n.props, n.domRef, n.ns === "svg", context);
   diffClass(c ? c.classList : null, n.classList, n.domRef, context);
   diffCss(c ? c.css : {}, n.css, n.domRef, context);
+  diffEvents(c, n, context);
   diffChildren(c ? c.children : [], n.children, n.domRef, context);
   drawCanvas(n);
+}
+function diffEvents(c, n, context) {
+  if (!onBTS() && !onMTS())
+    return;
+  if (c === null && n.directEvents) {
+    for (const name of n.directEvents) {
+      context.addEvent(n.domRef, name, { capture: false, direct: true });
+    }
+  }
+  for (const capture of [true, false]) {
+    const cKeys = eventEntries(c, capture);
+    const nKeys = eventEntries(n, capture);
+    for (const name in cKeys) {
+      if (!(name in nKeys))
+        context.removeEvent(n.domRef, name, capture);
+    }
+    for (const name in nKeys) {
+      const nk = nKeys[name], ck = cKeys[name];
+      if (!ck || !sameEventKey(nk, ck))
+        context.addEvent(n.domRef, name, nk);
+    }
+  }
 }
 function diffClass(c, n, domRef, context) {
   if (!c && !n) {
@@ -2005,10 +2061,11 @@ function diffClass(c, n, domRef, context) {
 }
 function diffProps(cProps, nProps, node, isSvg, context) {
   var newProp;
+  const native = onBTS() || onMTS();
   for (const c in cProps) {
     newProp = nProps[c];
     if (newProp === undefined) {
-      if (isSvg || !(c in node) || c === "disabled") {
+      if (isSvg || native || !(c in node) || c === "disabled") {
         context.removeAttribute(node, c);
       } else {
         context.setAttribute(node, c, "");
@@ -2022,7 +2079,7 @@ function diffProps(cProps, nProps, node, isSvg, context) {
         } else {
           context.setAttribute(node, c, newProp);
         }
-      } else if (c in node && !(c === "list" || c === "form")) {
+      } else if (!native && c in node && !(c === "list" || c === "form")) {
         node[c] = newProp;
       } else {
         context.setAttribute(node, c, newProp);
@@ -2039,7 +2096,7 @@ function diffProps(cProps, nProps, node, isSvg, context) {
       } else {
         context.setAttribute(node, n, newProp);
       }
-    } else if (n in node && !(n === "list" || n === "form")) {
+    } else if (!native && n in node && !(n === "list" || n === "form")) {
       node[n] = nProps[n];
     } else {
       context.setAttribute(node, n, newProp);
@@ -2081,6 +2138,22 @@ function diffChildren(cs, ns, parent, context, endAnchor = null) {
       }
     }
   }
+}
+function eventEntries(c, capture) {
+  const out = {};
+  if (!c)
+    return out;
+  const phase = capture ? c.events.captures : c.events.bubbles;
+  for (const name in phase) {
+    const { staticKey, componentId, options } = phase[name];
+    if (staticKey !== undefined && componentId !== undefined) {
+      out[name] = { capture, staticKey, componentId, options };
+    }
+  }
+  return out;
+}
+function sameEventKey(a, b) {
+  return a.staticKey === b.staticKey && a.componentId === b.componentId && a.options?.preventDefault === b.options?.preventDefault && a.options?.stopPropagation === b.options?.stopPropagation;
 }
 function populateDomRef(c, context) {
   if (c.ns === "svg") {
@@ -2306,6 +2379,12 @@ function delegator(mount, events, getVTree, debug, context) {
 }
 function listener(e, mount, getVTree, debug, context) {
   getVTree(function(vtree) {
+    if (!vtree) {
+      if (debug) {
+        console.warn("Event received before vtree was mounted, dropping", e);
+      }
+      return;
+    }
     if (Array.isArray(e)) {
       for (const key of e) {
         dispatch(key, vtree, mount, debug, context);
@@ -2466,7 +2545,9 @@ function eventJSON(at, obj) {
     return ret;
   }
   for (const a of at)
-    obj = obj[a];
+    obj = obj == null ? undefined : obj[a];
+  if (obj === null || obj === undefined)
+    return null;
   var newObj;
   if (obj instanceof Array || "length" in obj && obj["localName"] !== "select") {
     newObj = [];
@@ -2559,17 +2640,6 @@ var hydrationContext = {
     return node.childNodes;
   }
 };
-var componentContext = {
-  mountComponent: function(componentId, model) {
-    return;
-  },
-  unmountComponent: function(componentId) {
-    return;
-  },
-  modelHydration: function(componentId, model) {
-    return;
-  }
-};
 var drawingContext = {
   nextSibling: (node) => {
     let sibling = node.nextSibling;
@@ -2615,6 +2685,8 @@ var drawingContext = {
     if (className)
       domRef.classList.remove(className);
   },
+  addEvent: (_node, _name, _key) => {},
+  removeEvent: (_node, _name, _capture) => {},
   insertBefore: (parent, child, node) => {
     return parent.insertBefore(child, node);
   },
@@ -2781,7 +2853,6 @@ globalThis["miso"] = {
   hydrationContext,
   eventContext,
   drawingContext,
-  componentContext,
   diff,
   hydrate,
   version,
@@ -2815,28 +2886,23 @@ globalThis["miso"] = {
   setDrawingContext: function(name) {
     const drawing = globalThis[name]["drawingContext"];
     const events = globalThis[name]["eventContext"];
-    const components = globalThis[name]["componentContext"];
     if (!drawing) {
       console.error('Custom rendering engine ("drawingContext") is not defined at globalThis[name].drawingContext', name);
     }
     if (!events) {
       console.error('Custom event delegation ("eventContext") is not defined at globalThis[name].eventContext', name);
     }
-    if (!components) {
-      console.error('Custom component context ("componentContext") is not defined at globalThis[name].componentContext', name);
-    }
     globalThis["miso"]["drawingContext"] = drawing;
     globalThis["miso"]["eventContext"] = events;
-    globalThis["miso"]["componentContext"] = components;
   }
 };
 },
-ZC1ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCDataziJSStringZC: ($1) => {return ($1).toString()},
-ZC2ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCDataziJSStringZC: ($1) => {return ($1).toString()},
-ZC3ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCDataziJSStringZC: () => {return ''},
-ZC4ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCDataziJSStringZC: ($1,$2) => {return $1 + $2},
-ZC5ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCDataziJSStringZC: ($1,$2) => {return $1 === $2},
-ZC6ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCDataziJSStringZC: ($1,$2) => {if ($1 < 1) { return ''; }
+ZC1ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCDataziJSStringZC: ($1) => {return ($1).toString()},
+ZC2ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCDataziJSStringZC: ($1) => {return ($1).toString()},
+ZC3ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCDataziJSStringZC: () => {return ''},
+ZC4ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCDataziJSStringZC: ($1,$2) => {return $1 + $2},
+ZC5ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCDataziJSStringZC: ($1,$2) => {return $1 === $2},
+ZC6ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCDataziJSStringZC: ($1,$2) => {if ($1 < 1) { return ''; }
 else if ($1 === 1) { return $2; }
 else {
   const inc = $2;
@@ -2845,14 +2911,14 @@ else {
   }
   return $2;
 }},
-ZC7ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCDataziJSStringZC: ($1,$2) => {if ($1 === $2) return 0;
+ZC7ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCDataziJSStringZC: ($1,$2) => {if ($1 === $2) return 0;
 else if ($1 > $2) return 1;
 else return -1;},
-ZC15ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCDataziJSStringZC: ($1,$2) => ((new TextDecoder('utf-8', {fatal: true})).decode(new Uint8Array(__exports.memory.buffer, $1, $2))),
-ZC16ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCDataziJSStringZC: ($1,$2) => ((new Uint8Array(__exports.memory.buffer, $2, $1.byteLength)).set($1)),
-ZC17ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCDataziJSStringZC: ($1) => ($1.byteLength),
-ZC18ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCDataziJSStringZC: ($1) => ((new TextEncoder()).encode($1)),
-ZC41ZCmisozm1zi12zi0zi0zm06c4432fefa4163a4c8e637c59482569a98fe0a064cd13fb6abdf7d88d8cf656ZCDataziJSStringZC: ($1,$2) => {return $1 + String.fromCharCode($2);},
+ZC15ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCDataziJSStringZC: ($1,$2) => ((new TextDecoder('utf-8', {fatal: true})).decode(new Uint8Array(__exports.memory.buffer, $1, $2))),
+ZC16ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCDataziJSStringZC: ($1,$2) => ((new Uint8Array(__exports.memory.buffer, $2, $1.byteLength)).set($1)),
+ZC17ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCDataziJSStringZC: ($1) => ($1.byteLength),
+ZC18ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCDataziJSStringZC: ($1) => ((new TextEncoder()).encode($1)),
+ZC41ZCmisozm1zi14zi0zi0zm1eab3dd6728b5bd3f4461f271f3f32201032ff687ed757e629b999baade77645ZCDataziJSStringZC: ($1,$2) => {return $1 + String.fromCharCode($2);},
 ZC0ZCghczminternalZCGHCziInternalziWasmziPrimziExportsZC: ($1,$2) => ($1.reject(new WebAssembly.RuntimeError($2))),
 ZC19ZCghczminternalZCGHCziInternalziWasmziPrimziExportsZC: ($1) => ($1.resolve()),
 ZC20ZCghczminternalZCGHCziInternalziWasmziPrimziExportsZC: ($1) => {$1.throwTo = () => {};},
