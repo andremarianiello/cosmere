@@ -214,20 +214,30 @@ main.character-builder {
     justify-self: right;
     display: flex;
     flex-direction: row;
-    list-style: none;
     padding: 0;
 
-    button {
-      display: flex;
-      flex-direction: row;
-      height: 2em;
-      width: fit-content;
-      padding: 0.25rem;
+    ul {
+      list-style: none;
 
-      img {
-        height: 100%;
-        display: inline-block;
+      button {
+        display: flex;
+        flex-direction: row;
+        height: 2em;
+        width: fit-content;
+        padding: 0.25rem;
+
+        img {
+          height: 100%;
+          display: inline-block;
+        }
       }
+    }
+
+    .copy-notice {
+      /*
+      display: none;
+      position: fixed;
+      */
     }
   }
 
