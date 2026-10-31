@@ -585,7 +585,7 @@ main.character-builder {
 
         &>ul {
           display: grid;
-          grid-template-columns: 1fr max-content auto auto 1fr;
+          grid-template-columns: 1fr max-content auto auto auto 1fr;
           align-items: center;
           grid-gap: 0.25rem;
           grid-auto-rows: auto;
