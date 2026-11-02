@@ -98,36 +98,38 @@ newJSVal: (v) => __ghc_wasm_jsffi_jsval_manager.newJSVal(v),
 getJSVal: (k) => __ghc_wasm_jsffi_jsval_manager.getJSVal(k),
 freeJSVal: (k) => __ghc_wasm_jsffi_jsval_manager.freeJSVal(k),
 scheduleWork: () => setImmediate(__exports.rts_schedulerLoop),
-ZC0ZCmszm1zi14zi0zi0zmf404b966ZCMisoziJSONZC: ($1) => {return globalThis.miso.typeOf($1);},
-ZC2ZCmszm1zi14zi0zi0zmf404b966ZCMisoziJSONZC: ($1) => {return JSON.stringify($1);},
-ZC2ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC: ($1) => {return $1.length},
-ZC6ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC: ($1) => {return requestAnimationFrame($1);},
-ZC7ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC: ($1,$2) => {return $2[$1]},
-ZC8ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC: ($1) => {return $1},
-ZC9ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC: ($1) => {return $1},
-ZC10ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC: ($1) => {return $1},
-ZC12ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC: ($1,$2) => {return $2[$1]},
-ZC13ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC: () => {return {}},
-ZC15ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC: ($1,$2,$3) => ($3[$1]=$2),
-ZC17ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC: ($1,$2,$3) => {return $1.apply($2, $3);},
-ZC18ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC: ($1) => {return Object.keys($1);},
-ZC24ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC: ($1) => ((...args) => __exports.ghczuwasmzujsffiZC23ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC($1, ...args)),
-ZC32ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC: ($1) => ((...args) => __exports.ghczuwasmzujsffiZC31ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC($1, ...args)),
-ZC34ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC: ($1) => ((...args) => __exports.ghczuwasmzujsffiZC33ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC($1, ...args)),
-ZC38ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC: ($1) => ((...args) => __exports.ghczuwasmzujsffiZC37ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC($1, ...args)),
-ZC40ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC: ($1) => ((...args) => __exports.ghczuwasmzujsffiZC39ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC($1, ...args)),
-ZC44ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC: () => {return globalThis},
-ZC45ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC: () => {return null;},
-ZC46ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC: ($1) => {return $1 === null;},
-ZC47ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC: ($1) => {return $1 === undefined;},
-ZC48ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC: ($1) => {return $1},
-ZC53ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC: ($1,$2) => ($1.push($2)),
-ZC54ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC: () => {return [];},
-ZC55ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC: ($1) => {return $1},
-ZC56ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC: ($1) => {return $1},
-ZC57ZCmszm1zi14zi0zi0zmf404b966ZCMisoziDSLziFFIZC: ($1) => {if ($1 === 0.0) return false;
+ZC0ZCmszm1zi14zi0zi0zm447aea86ZCMisoziJSONZC: ($1) => {return globalThis.miso.typeOf($1);},
+ZC2ZCmszm1zi14zi0zi0zm447aea86ZCMisoziJSONZC: ($1) => {return JSON.stringify($1);},
+ZC2ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: ($1) => {return $1.length},
+ZC6ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: ($1) => {return requestAnimationFrame($1);},
+ZC7ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: ($1,$2) => {return $2[$1]},
+ZC8ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: ($1) => {return $1},
+ZC9ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: ($1) => {return $1},
+ZC10ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: ($1) => {return $1},
+ZC12ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: ($1,$2) => {return $2[$1]},
+ZC13ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: () => {return {}},
+ZC15ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: ($1,$2,$3) => ($3[$1]=$2),
+ZC17ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: ($1,$2,$3) => {return $1.apply($2, $3);},
+ZC18ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: ($1) => {return Object.keys($1);},
+ZC24ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: ($1) => ((...args) => __exports.ghczuwasmzujsffiZC23ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC($1, ...args)),
+ZC30ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: ($1) => ((...args) => __exports.ghczuwasmzujsffiZC29ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC($1, ...args)),
+ZC32ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: ($1) => ((...args) => __exports.ghczuwasmzujsffiZC31ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC($1, ...args)),
+ZC34ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: ($1) => ((...args) => __exports.ghczuwasmzujsffiZC33ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC($1, ...args)),
+ZC40ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: ($1) => ((...args) => __exports.ghczuwasmzujsffiZC39ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC($1, ...args)),
+ZC42ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: ($1) => ((...args) => __exports.ghczuwasmzujsffiZC41ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC($1, ...args)),
+ZC44ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: () => {return globalThis},
+ZC45ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: () => {return null;},
+ZC46ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: ($1) => {return $1 === null;},
+ZC47ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: ($1) => {return $1 === undefined;},
+ZC48ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: ($1) => {return $1},
+ZC53ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: ($1,$2) => ($1.push($2)),
+ZC54ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: () => {return [];},
+ZC55ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: ($1) => {return $1},
+ZC56ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: ($1) => {return $1},
+ZC57ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: ($1) => {if ($1 === 0.0) return false;
 return true;},
-ZC0ZCmszm1zi14zi0zi0zmf404b966ZCMisoziRuntimeZC: () => {// ts/miso/util.ts
+ZC58ZCmszm1zi14zi0zi0zm447aea86ZCMisoziDSLziFFIZC: ($1,$2) => {return $1 === $2;},
+ZC0ZCmszm1zi14zi0zi0zm447aea86ZCMisoziRuntimeZC: () => {// ts/miso/util.ts
 var version = "1.14.0.0";
 function onBTS() {
   return typeof __BACKGROUND__ !== "undefined" && __BACKGROUND__;
@@ -1151,6 +1153,53 @@ function propagateWhileAble(vtree, event) {
     }
   }
 }
+var decoderFailed = Object.freeze({});
+var lastDecoderError = { message: "", nullish: false };
+function decoderError() {
+  return lastDecoderError;
+}
+function decoderFail(message, nullish) {
+  lastDecoderError = { message, nullish };
+  return decoderFailed;
+}
+function decoderStep(obj, key, args) {
+  if (obj === null || obj === undefined)
+    return decoderFail("", true);
+  try {
+    if (args === null)
+      return obj[key];
+    const f = obj[key];
+    if (typeof f !== "function")
+      return decoderFail("no such method", false);
+    return f.apply(obj, args);
+  } catch (e) {
+    let shown;
+    try {
+      shown = String(e);
+    } catch (_) {
+      shown = "an exception";
+    }
+    return decoderFail("threw " + shown, false);
+  }
+}
+function decoderSnapshot(obj) {
+  if (obj === null || obj === undefined)
+    return null;
+  const t = typeof obj;
+  if (t === "string" || t === "number" || t === "boolean")
+    return obj;
+  return eventJSON([], obj);
+}
+function decoderPick(obj, keys) {
+  const picked = {};
+  for (const key of keys) {
+    const v = obj[key];
+    const t = typeof v;
+    if (t === "string" || t === "number" || t === "boolean")
+      picked[key] = v;
+  }
+  return picked;
+}
 function eventJSON(at, obj) {
   if (typeof at[0] === "object") {
     var ret = [];
@@ -1478,6 +1527,11 @@ globalThis["miso"] = {
   callSelect,
   callSetSelectionRange,
   eventJSON,
+  decoderStep,
+  decoderFailed,
+  decoderError,
+  decoderSnapshot,
+  decoderPick,
   fetchCore,
   eventSourceConnect,
   eventSourceClose,
@@ -1512,7 +1566,7 @@ globalThis["miso"] = {
   }
 };
 },
-ZC1ZCmszm1zi14zi0zi0zmf404b966ZCMisoziRuntimeZC: () => {// ts/miso/util.ts
+ZC1ZCmszm1zi14zi0zi0zm447aea86ZCMisoziRuntimeZC: () => {// ts/miso/util.ts
 var version = "1.14.0.0";
 function onBTS() {
   return typeof __BACKGROUND__ !== "undefined" && __BACKGROUND__;
@@ -2536,6 +2590,53 @@ function propagateWhileAble(vtree, event) {
     }
   }
 }
+var decoderFailed = Object.freeze({});
+var lastDecoderError = { message: "", nullish: false };
+function decoderError() {
+  return lastDecoderError;
+}
+function decoderFail(message, nullish) {
+  lastDecoderError = { message, nullish };
+  return decoderFailed;
+}
+function decoderStep(obj, key, args) {
+  if (obj === null || obj === undefined)
+    return decoderFail("", true);
+  try {
+    if (args === null)
+      return obj[key];
+    const f = obj[key];
+    if (typeof f !== "function")
+      return decoderFail("no such method", false);
+    return f.apply(obj, args);
+  } catch (e) {
+    let shown;
+    try {
+      shown = String(e);
+    } catch (_) {
+      shown = "an exception";
+    }
+    return decoderFail("threw " + shown, false);
+  }
+}
+function decoderSnapshot(obj) {
+  if (obj === null || obj === undefined)
+    return null;
+  const t = typeof obj;
+  if (t === "string" || t === "number" || t === "boolean")
+    return obj;
+  return eventJSON([], obj);
+}
+function decoderPick(obj, keys) {
+  const picked = {};
+  for (const key of keys) {
+    const v = obj[key];
+    const t = typeof v;
+    if (t === "string" || t === "number" || t === "boolean")
+      picked[key] = v;
+  }
+  return picked;
+}
 function eventJSON(at, obj) {
   if (typeof at[0] === "object") {
     var ret = [];
@@ -2863,6 +2964,11 @@ globalThis["miso"] = {
   callSelect,
   callSetSelectionRange,
   eventJSON,
+  decoderStep,
+  decoderFailed,
+  decoderError,
+  decoderSnapshot,
+  decoderPick,
   fetchCore,
   eventSourceConnect,
   eventSourceClose,
@@ -2897,28 +3003,35 @@ globalThis["miso"] = {
   }
 };
 },
-ZC1ZCmszm1zi14zi0zi0zmf404b966ZCDataziJSStringZC: ($1) => {return ($1).toString()},
-ZC2ZCmszm1zi14zi0zi0zmf404b966ZCDataziJSStringZC: ($1) => {return ($1).toString()},
-ZC3ZCmszm1zi14zi0zi0zmf404b966ZCDataziJSStringZC: () => {return ''},
-ZC4ZCmszm1zi14zi0zi0zmf404b966ZCDataziJSStringZC: ($1,$2) => {return $1 + $2},
-ZC5ZCmszm1zi14zi0zi0zmf404b966ZCDataziJSStringZC: ($1,$2) => {return $1 === $2},
-ZC6ZCmszm1zi14zi0zi0zmf404b966ZCDataziJSStringZC: ($1,$2) => {if ($1 < 1) { return ''; }
-else if ($1 === 1) { return $2; }
-else {
-  const inc = $2;
-  while (--$1) {
-    $2 += inc;
+ZC1ZCmszm1zi14zi0zi0zm447aea86ZCDataziJSStringZC: ($1) => {return ($1).toString()},
+ZC2ZCmszm1zi14zi0zi0zm447aea86ZCDataziJSStringZC: ($1) => {return ($1).toString()},
+ZC3ZCmszm1zi14zi0zi0zm447aea86ZCDataziJSStringZC: () => {return ''},
+ZC4ZCmszm1zi14zi0zi0zm447aea86ZCDataziJSStringZC: ($1,$2) => {return $1 + $2},
+ZC5ZCmszm1zi14zi0zi0zm447aea86ZCDataziJSStringZC: ($1,$2) => {return $1 === $2},
+ZC6ZCmszm1zi14zi0zi0zm447aea86ZCDataziJSStringZC: ($1,$2) => {return $1 < 1 ? '' : $2.repeat($1);},
+ZC7ZCmszm1zi14zi0zi0zm447aea86ZCDataziJSStringZC: ($1,$2) => {if ($1 === $2) return 0;
+const sur = globalThis.__misoSurrogate || (globalThis.__misoSurrogate = /[\uD800-\uDFFF]/);
+if (!sur.test($1) && !sur.test($2)) return $1 < $2 ? -1 : 1;
+// a surrogate on one side only can still meet U+E000 to U+FFFF
+if (!/[\uD800-\uFFFF]/.test($1) || !/[\uD800-\uFFFF]/.test($2)) return $1 < $2 ? -1 : 1;
+const n = Math.min($1.length, $2.length);
+for (let i = 0; i < n; i++) {
+  let a = $1.charCodeAt(i), b = $2.charCodeAt(i);
+  if (a !== b) {
+    if (a >= 0xD800 && b >= 0xD800) {
+      a = a >= 0xE000 ? a - 0x800 : a + 0x2000;
+      b = b >= 0xE000 ? b - 0x800 : b + 0x2000;
+    }
+    return a < b ? -1 : 1;
   }
-  return $2;
-}},
-ZC7ZCmszm1zi14zi0zi0zmf404b966ZCDataziJSStringZC: ($1,$2) => {if ($1 === $2) return 0;
-else if ($1 > $2) return 1;
-else return -1;},
-ZC15ZCmszm1zi14zi0zi0zmf404b966ZCDataziJSStringZC: ($1,$2) => ((new TextDecoder('utf-8', {fatal: true})).decode(new Uint8Array(__exports.memory.buffer, $1, $2))),
-ZC16ZCmszm1zi14zi0zi0zmf404b966ZCDataziJSStringZC: ($1,$2) => ((new Uint8Array(__exports.memory.buffer, $2, $1.byteLength)).set($1)),
-ZC17ZCmszm1zi14zi0zi0zmf404b966ZCDataziJSStringZC: ($1) => ($1.byteLength),
-ZC18ZCmszm1zi14zi0zi0zmf404b966ZCDataziJSStringZC: ($1) => ((new TextEncoder()).encode($1)),
-ZC41ZCmszm1zi14zi0zi0zmf404b966ZCDataziJSStringZC: ($1,$2) => {return $1 + String.fromCharCode($2);},
+}
+return $1.length < $2.length ? -1 : 1;},
+ZC8ZCmszm1zi14zi0zi0zm447aea86ZCDataziJSStringZC: ($1,$2) => ($1.join($2)),
+ZC9ZCmszm1zi14zi0zi0zm447aea86ZCDataziJSStringZC: ($1,$2) => ($1.push($2)),
+ZC10ZCmszm1zi14zi0zi0zm447aea86ZCDataziJSStringZC: () => ([]),
+ZC13ZCmszm1zi14zi0zi0zm447aea86ZCDataziJSStringZC: ($1) => {return $1.length;},
+ZC25ZCmszm1zi14zi0zi0zm447aea86ZCDataziJSStringZC: ($1,$2) => ((globalThis.__misoTextDecoder || (globalThis.__misoTextDecoder = new TextDecoder('utf-8', {fatal: true, ignoreBOM: true}))).decode(new Uint8Array(__exports.memory.buffer, $1, $2))),
+ZC26ZCmszm1zi14zi0zi0zm447aea86ZCDataziJSStringZC: ($1,$2,$3) => ((globalThis.__misoTextEncoder || (globalThis.__misoTextEncoder = new TextEncoder())).encodeInto($1, new Uint8Array(__exports.memory.buffer, $2, $3)).written),
 ZC0ZCghczminternalZCGHCziInternalziWasmziPrimziExportsZC: ($1,$2) => ($1.reject(new WebAssembly.RuntimeError($2))),
 ZC19ZCghczminternalZCGHCziInternalziWasmziPrimziExportsZC: ($1) => ($1.resolve()),
 ZC20ZCghczminternalZCGHCziInternalziWasmziPrimziExportsZC: ($1) => {$1.throwTo = () => {};},
