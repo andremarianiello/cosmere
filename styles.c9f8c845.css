@@ -272,7 +272,7 @@ main.character-builder {
     text-align: center;
   }
 
-  >section {
+  >section, >footer {
     grid-column: 1 / -1;
     border: 1px solid black;
     padding: 0.5rem;
@@ -670,6 +670,19 @@ main.character-builder {
         @media print {
           display: none;
         }
+      }
+    }
+  }
+
+  section.notes {
+    .notes {
+      width: stretch;
+      width: -moz-available;
+      border: 1px solid black;
+      padding: 0.5rem;
+
+      &:focus {
+        font-family: monospace;
       }
     }
   }
